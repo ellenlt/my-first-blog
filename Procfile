@@ -1,1 +1,1 @@
-web: gunicorn ghsanavigator.wsgi --log-file -
+web: gunicorn mysite.wsgi
