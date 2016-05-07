@@ -10,4 +10,6 @@ urlpatterns = [
 	# after post/? and transfer to a view as a new variable called pk (primary key)
 	# And \d tells us that it can only be a digit (so ignores the last backslash)
 	url(r'^post/(?P<pk>\d+)$', views.post_detail, name='post_detail'),
+	url(r'^post/new/$', views.post_new, name='post_new'),
+	url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit')
 ]
